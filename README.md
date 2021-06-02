@@ -41,15 +41,17 @@ In RTOS operating system, each task is allocated a very short time. If the opera
 Suppose you have to design an circuit that is placed on an industrial device to protect human life. Take the cutting machine, for example. You must design a circuit that, after detecting a human hand, immediately stops the device and holds the blade. In such a system, even a few moments of delay can cause irreparable damage. The need for a system to be real-time in such cases becomes clear. Other applications of RTOS include __car airbag system__ , which is very important to operate in a timely manner. Other benefits of RTOS include:
 
 
-__1.__   Ability to schedule based on priority is a very powerful tool that allows the processor to perform important tasks faster than non-important ones.
+__1.__    Ability to schedule based on priority is a very powerful tool that allows the processor to perform important tasks faster than non-important ones.
 
-__2.__   Modularity  :  Using RTOS makes coding to be done modularly. So it will be much easier to develop and reuse the code in the future.
+__2.__    Modularity  :  Using RTOS makes coding to be done modularly. So it will be much easier to develop and reuse the code in the future.
 
 __3.__    Team development upgrade : The task-based system allows separate designers and teams to work independently on different parts of their project
 
 __4.__    Easier testing : Modular work based development allows modular work based testing.
 
-__5.__   System efficiency is greatly improved.
+__5.__    Reuse the code :  Another advantage of modular work is that similar programs on similar operating systems inevitably lead to create a library of standard tasks.
+
+__5.__    System efficiency is greatly improved because no processing time is wasted on events that did not occur.
 
 
 
