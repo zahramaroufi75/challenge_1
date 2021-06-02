@@ -45,4 +45,4 @@ __1.__   Ability to schedule based on priority is a very powerful tool that allo
 
 __2.__   Using RTOS makes coding to be done modularly. So it will be much easier to develop and reuse the code in the future.
 
-__3.__   
+__3.__   System efficiency is greatly improved.
