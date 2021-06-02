@@ -45,9 +45,11 @@ __1.__   Ability to schedule based on priority is a very powerful tool that allo
 
 __2.__   Modularity  :  Using RTOS makes coding to be done modularly. So it will be much easier to develop and reuse the code in the future.
 
-__3__    Team development upgrade : The task-based system allows separate designers and teams to work independently on different parts of their project
+__3.__    Team development upgrade : The task-based system allows separate designers and teams to work independently on different parts of their project
 
-__4.__   System efficiency is greatly improved.
+__4.__    Easier testing : Modular work based development allows modular work based testing.
+
+__5.__   System efficiency is greatly improved.
 
 
 
