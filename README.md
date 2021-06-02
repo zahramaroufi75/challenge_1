@@ -120,6 +120,8 @@ SAFERTOS was developed by WITTENSTEIN High Integrity Systems, in partnership wit
 
 SAFERTOS can reside solely in the on-chip read only memory of a microcontroller for standards compliance. When implemented in hardware memory, SAFERTOS code can only be utilized in its original, already-certified, configuration. This means certification of systems do not need to re-test the kernel portion of their designs. SAFERTOS is included in the ROM of some Stellaris Microcontrollers from Texas Instruments. SAFERTOS source code does not need to be separately purchased. In this usage scenario, a C header file is used to map SAFERTOS API functions to their location in read-only memory.
 
+### OPENRTOS
+OPENRTOS is a commercially-licensed version of Amazon FreeRTOS, sold by WITTENSTEIN High Integrity Systems. This product provides support and allows companies to use the Amazon FreeRTOS kernel and libraries without the a:FreeRTOS MIT license.
 
 
 
