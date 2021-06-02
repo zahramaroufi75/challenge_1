@@ -57,6 +57,8 @@ __5.__    System efficiency is greatly improved because no processing time is wa
 
 ## What is freeRTOS?
 
+FreeRTOS is an RTOS class that is designed small enough to run on a microcontroller however, its use is not limited to microcontroller applications.The microcontroller is a finite processor and a limited resource.
+
 
 
 ![Image of Yaktocat](https://digispark.ir/wp-content/uploads/2021/02/1_elMEPVMRFNKdpvVvZjLwoQ-300x174.png)
