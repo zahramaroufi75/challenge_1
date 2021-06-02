@@ -9,6 +9,7 @@ No hassle with hardware details
 
 ![Image of Yaktocat](https://digispark.ir/wp-content/uploads/2021/02/history-of-the-operating-system.png)
 
+
 ##  What is Super Loop or RTOS ?
 The usual programming method in which all commands fit into an infinite loop is called a Super Loop. This method is responsive to many simple codes. But in complex code, there are times when the processor needs to do several things at once, and parts such as timers and interrupts do not help. In these cases, the introduced method will not be responsible. The solution to overcome this limitation is to use the RTOS operating system. In the following code, you can see an example of a program with the Super Loop method.
 
@@ -34,6 +35,7 @@ In RTOS operating system, each task is allocated a very short time. If the opera
 
 
 ![Image of Yaktocat](https://digispark.ir/wp-content/uploads/2021/02/Figure-1.png)
+
 
 ## Why should we use RTOS?
 
