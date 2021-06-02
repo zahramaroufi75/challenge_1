@@ -28,3 +28,5 @@ Function Main_Function()
 
 
 RTOS stands for Real Time Operating System. In fact, using this operating system on your microcontroller, you can divide your program into different tasks. In fact, RTOS is a software component that allows the processor to move quickly between tasks. Each task has an infinite loop inside, and the tasks run almost simultaneously. You can also use this operating system to select a priority for each task. In this way, if the task has a higher priority, the operating system first performs the priority task and then performs other tasks.
+
+In RTOS operating system, each task is allocated a very short time. If the operating system is running a Task and a higher priority Task arrives, the operating system leaves the Task where it is and goes to the higher priority Task until it is the turn of the previous Task again.Then the operating system continues the task from the dropped point.
