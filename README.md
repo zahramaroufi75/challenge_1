@@ -75,13 +75,13 @@ FreeRTOS is designed to be small and simple. The kernel itself consists of only 
 
 FreeRTOS provides methods for multiple __threads__ or __tasks__ , __mutexes__ , __semaphores__ and __software timers__ . A tick-less mode is provided for low power applications. Thread priorities are supported. FreeRTOS applications can be completely statically allocated. Alternatively RTOS objects can be dynamically allocated with five schemes of memory allocation provided:
 
-__.__   allocate only;
+__.__   allocate only
 
-__.__   allocate and free with a very simple, fast, algorithm;
+__.__   allocate and free with a very simple, fast, algorithm
 
-__.__   a more complex but fast allocate and free algorithm with memory coalescence;
+__.__   a more complex but fast allocate and free algorithm with memory coalescence
 
-__.__   an alternative to the more complex scheme that includes memory coalescence that allows a heap to be broken across multiple memory areas.
+__.__   an alternative to the more complex scheme that includes memory coalescence that allows a heap to be broken across multiple memory areas
 
-__.__   and C library allocate and free with some mutual exclusion protection.
+__.__   and C library allocate and free with some mutual exclusion protection
 
