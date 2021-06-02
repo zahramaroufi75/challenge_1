@@ -39,6 +39,3 @@ In RTOS operating system, each task is allocated a very short time. If the opera
 
 
 
-
-
-
