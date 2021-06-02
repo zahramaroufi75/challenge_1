@@ -33,3 +33,7 @@ In RTOS operating system, each task is allocated a very short time. If the opera
 
 
 ![Image of Yaktocat](C:\Users\98919\Desktop\Figure2.png)
+
+
+![Image of Yaktocat](https://digispark.ir/wp-content/uploads/2021/02/Figure-1-1536x699.png)
+
