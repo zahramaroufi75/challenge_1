@@ -32,4 +32,13 @@ __RTOS__ stands for Real Time Operating System. In fact, using this operating sy
 In RTOS operating system, each task is allocated a very short time. If the operating system is running a task and a higher priority task arrives, the operating system leaves the task where it is and goes to the higher priority task until it is the turn of the previous task again.Then the operating system continues the task from the dropped point.This feature is called __Multitasking__.
 
 
+
+
 ![Image of Yaktocat](https://digispark.ir/wp-content/uploads/2021/02/Figure-1-1536x699.png)
+
+
+
+
+
+
+
