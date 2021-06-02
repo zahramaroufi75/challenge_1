@@ -43,9 +43,11 @@ Suppose you have to design an circuit that is placed on an industrial device to 
 
 __1.__   Ability to schedule based on priority is a very powerful tool that allows the processor to perform important tasks faster than non-important ones.
 
-__2.__   Using RTOS makes coding to be done modularly. So it will be much easier to develop and reuse the code in the future.
+__2.__   Modularity  :  Using RTOS makes coding to be done modularly. So it will be much easier to develop and reuse the code in the future.
 
-__3.__   System efficiency is greatly improved.
+__3__    Team development upgrade : The task-based system allows separate designers and teams to work independently on different parts of their project
+
+__4.__   System efficiency is greatly improved.
 
 
 
