@@ -88,3 +88,12 @@ __.__   and C library allocate and free with some mutual exclusion protection
 There are none of the more advanced features typically found in operating systems like Linux or Microsoft Windows, such as device drivers, advanced memory management, user accounts, and networking. The emphasis is on compactness and speed of execution. FreeRTOS can be thought of as a 'thread library' rather than an 'operating system', although command line interface and POSIX-like I/O abstraction add-ons are available.
 
 FreeRTOS implements multiple threads by having the host program call a thread tick method at regular short intervals. The thread tick method switches tasks depending on priority and a __round-robin scheduling__ scheme. The usual interval is 1 to 10 milliseconds (1/1000 to 1/100 of a second), via an interrupt from a hardware timer, but this interval is often changed to suit a particular application.
+
+# Key features
+__.__  Book and reference manuals.
+__.__  Small memory footprint, low overhead, and fast execution.
+__.__  Tick-less option for low power applications.
+__.__  Intended for both hobbyists and professional developers working on commercial products.
+__.__  Scheduler can be configured for both preemptive or cooperative operation.
+__.__  Coroutine support (coroutines in FreeRTOS are simple and lightweight tasks with limited use of the call stack)
+__.__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-             based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
