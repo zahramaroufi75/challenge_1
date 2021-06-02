@@ -38,6 +38,6 @@ In RTOS operating system, each task is allocated a very short time. If the opera
 
 
 ## Why should we use RTOS?
-
+Suppose you have to design an circuit that is placed on an industrial device to protect human life. Take the cutting machine, for example. You must design a circuit that, after detecting a human hand, immediately stops the device and holds the blade. In such a system, even a few moments of delay can cause irreparable damage. The need for a system to be real-time in such cases becomes clear. Other applications of RTOS include __car airbag system__ , which is very important to operate in a timely manner. Other benefits of RTOS include:
 
 
