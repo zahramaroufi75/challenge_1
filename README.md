@@ -57,7 +57,7 @@ __5.__    System efficiency is greatly improved because no processing time is wa
 
 # What is freeRTOS?
 
-FreeRTOS is an RTOS class that is designed small enough to run on a microcontroller however, its use is not limited to microcontroller applications.The microcontroller is a finite processor and a limited resource.
+FreeRTOS is an RTOS class that is designed small enough to run on a microcontroller. However, its use is not limited to microcontroller applications.The microcontroller is a finite processor and a limited resource.
 
 
 
@@ -65,7 +65,9 @@ FreeRTOS is an RTOS class that is designed small enough to run on a microcontrol
 
 
 
-FreeRTOS is a real-time operating system kernel[3][4][5] for embedded devices that has been ported to 35 microcontroller platforms. It is distributed under the MIT License.
+FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 35 microcontroller platforms. It is distributed under the MIT License.
 
 ## History
-The FreeRTOS kernel was originally developed by Richard Barry around 2003, and was later developed and maintained by Barry's company, Real Time Engineers Ltd. In 2017 Real Time Engineers Ltd. passed stewardship of the FreeRTOS project to Amazon Web Services. Barry continues to work on FreeRTOS as part of an AWS team
+The FreeRTOS kernel was originally developed by Richard Barry around 2003, and was later developed and maintained by Barry's company, Real Time Engineers Ltd. In 2017 Real Time Engineers Ltd. passed stewardship of the FreeRTOS project to Amazon Web Services. Barry continues to work on FreeRTOS as part of an AWS team.
+
+
