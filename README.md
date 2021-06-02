@@ -103,4 +103,4 @@ __.__  Scheduler can be configured for both preemptive or cooperative operation.
 
 __.__  Coroutine support (coroutines in FreeRTOS are simple and lightweight tasks with limited use of the call stack)
 
-__.__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-               based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
+__.__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-      based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
