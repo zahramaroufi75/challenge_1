@@ -89,7 +89,7 @@ There are none of the more advanced features typically found in operating system
 
 FreeRTOS implements multiple threads by having the host program call a thread tick method at regular short intervals. The thread tick method switches tasks depending on priority and a __round-robin scheduling__ scheme. The usual interval is 1 to 10 milliseconds (1/1000 to 1/100 of a second), via an interrupt from a hardware timer, but this interval is often changed to suit a particular application.
 
-# Key features
+## Key features
 
 __.__  Book and reference manuals.
 
@@ -104,3 +104,22 @@ __.__  Scheduler can be configured for both preemptive or cooperative operation.
 __.__  Coroutine support (coroutines in FreeRTOS are simple and lightweight tasks with limited use of the call stack)
 
 __.__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-      based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
+
+
+
+## Derivations
+
+
+### Amazon FreeRTOS
+Amazon provides an extension of FreeRTOS, referred to as a:FreeRTOS. This is FreeRTOS with libraries for IOT support, specifically for Amazon Web Services. Since version 10.0.0 in 2017, Amazon has taken stewardship of the FreeRTOS code, including any updates to the original kernel
+
+### SAFERTOS
+SAFERTOS was developed as a complementary version of FreeRTOS, with common functionality but designed specifically for safety-critical implementation. FreeRTOS was subjected to HAZOP, and weaknesses were identified and resolved. The result was put through a full IEC 61508 SIL 3 development life cycle, the highest level for a software-only component.
+
+SAFERTOS was developed by WITTENSTEIN High Integrity Systems, in partnership with Real Time Engineers Ltd, primary developer of the FreeRTOS project. Both SAFERTOS and FreeRTOS share the same scheduling algorithm, have similar APIs, and are otherwise very similar, but they were developed with differing objectives. SAFERTOS was developed solely in the C language to meet requirements for certification to IEC61508.
+
+SAFERTOS can reside solely in the on-chip read only memory of a microcontroller for standards compliance. When implemented in hardware memory, SAFERTOS code can only be utilized in its original, already-certified, configuration. This means certification of systems do not need to re-test the kernel portion of their designs. SAFERTOS is included in the ROM of some Stellaris Microcontrollers from Texas Instruments. SAFERTOS source code does not need to be separately purchased. In this usage scenario, a C header file is used to map SAFERTOS API functions to their location in read-only memory.
+
+
+
+
