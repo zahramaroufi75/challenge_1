@@ -74,9 +74,14 @@ The FreeRTOS kernel was originally developed by Richard Barry around 2003, and w
 FreeRTOS is designed to be small and simple. The kernel itself consists of only three C files. To make the code readable, easy to port, and maintainable, it is written mostly in C, but there are a few assembly functions included where needed (mostly in architecture-specific scheduler routines).
 
 FreeRTOS provides methods for multiple __threads__ or __tasks__ , __mutexes__ , __semaphores__ and __software timers__ . A tick-less mode is provided for low power applications. Thread priorities are supported. FreeRTOS applications can be completely statically allocated. Alternatively RTOS objects can be dynamically allocated with five schemes of memory allocation provided:
+
 #.   allocate only;
+
 #.   allocate and free with a very simple, fast, algorithm;
+
 #.   a more complex but fast allocate and free algorithm with memory coalescence;
+
 #.   an alternative to the more complex scheme that includes memory coalescence that allows a heap to be broken across multiple memory areas.
+
 #.   and C library allocate and free with some mutual exclusion protection.
 
