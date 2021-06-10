@@ -67,7 +67,7 @@ FreeRTOS includes libraries for connectivity, security, and over-the-air (OTA) u
 
 FreeRTOS is an open-source project. You can download the source code, contribute changes or enhancements, or report issues on the GitHub site at https://github.com/aws/amazon-freertos .We release FreeRTOS code under the MIT open source license, so you can use it in commercial and personal projects.
 
-We also welcome contributions to the FreeRTOS documentation (FreeRTOS User Guide, FreeRTOS Porting Guide, and FreeRTOS Qualification Guide). The markdown source for the documentation is available at [ GitHub ](https://github.com/awsdocs/aws-freertos-docs) . It is released under the Creative Commons (CC BY-ND) license.
+We also welcome contributions to the FreeRTOS documentation (FreeRTOS User Guide, FreeRTOS Porting Guide, and FreeRTOS Qualification Guide). The markdown source for the documentation is available at [ GitHub ]    (https://github.com/awsdocs/aws-freertos-docs) . It is released under the Creative Commons (CC BY-ND) license.
 
 
 
