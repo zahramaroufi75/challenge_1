@@ -197,6 +197,8 @@ You start development by downloading FreeRTOS. You unzip the package and import 
 ![Image of Yaktocat](https://docs.aws.amazon.com/freertos/latest/userguide/images/afr-getting-started-workflow.png)
 
 
+Additional FreeRTOS Documentation is available on freertos.org including the FreeRTOS v10.0.0 Reference Manual.
+
 
 
 
