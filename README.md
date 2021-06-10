@@ -182,12 +182,22 @@ __•__  Texas Instruments CC3220SF-LAUNCHXL
 
 __•__  Microsoft Windows 7 or later, with at least a dual core and a hard-wired Ethernet connection
 
-__•__  [GitHub] (Xilinx Avnet MicroZed Industrial IoT Kit)
+__•__  Xilinx Avnet MicroZed Industrial IoT Kit
 
 
 Qualified devices are also listed on the __ AWS Partner Device Catalog __ .
 
 For information about qualifying a new device, see the __ FreeRTOS Qualification Guide __.
+
+
+## Development workflow
+
+You start development by downloading FreeRTOS. You unzip the package and import it into your IDE. You can then develop an application on your selected hardware platform and manufacture and deploy these devices using the development process appropriate for your device. Deployed devices can connect to the AWS IoT service or AWS IoT Greengrass as part of a complete IoT solution.
+
+![Image of Yaktocat](https://docs.aws.amazon.com/freertos/latest/userguide/images/afr-getting-started-workflow.png)
+
+
+
 
 
 
