@@ -56,13 +56,25 @@ __5.__    System efficiency is greatly improved because no processing time is wa
 
 # What is freeRTOS?
 
+FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 35 microcontroller platforms. It is distributed under the MIT License.
 
 
 ![Image of Yaktocat](https://digispark.ir/wp-content/uploads/2021/02/1_elMEPVMRFNKdpvVvZjLwoQ-300x174.png)
 
+Developed in partnership with the world's leading chip companies over a 15-year period, and now downloaded every 175 seconds, FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, FreeRTOS includes a kernel and a growing set of libraries suitable for use across all industry sectors. FreeRTOS is built with an emphasis on reliability and ease of use.
+
+FreeRTOS includes libraries for connectivity, security, and over-the-air (OTA) updates. FreeRTOS also includes demo applications that show FreeRTOS features on qualified boards.
+
+FreeRTOS is an open-source project. You can download the source code, contribute changes or enhancements, or report issues on the GitHub site at [GitHub](https://github.com/aws/amazon-freertos). We release FreeRTOS code under the MIT open source license, so you can use it in commercial and personal projects.
+
+We also welcome contributions to the FreeRTOS documentation (FreeRTOS User Guide, FreeRTOS Porting Guide, and FreeRTOS Qualification Guide). The markdown source for the documentation is available at https://github.com/awsdocs/aws-freertos-docs. It is released under the Creative Commons (CC BY-ND) license.
 
 
-FreeRTOS is a real-time operating system kernel for embedded devices that has been ported to 35 microcontroller platforms. It is distributed under the MIT License.
+
+
+
+
+
 
 ## History
 The FreeRTOS kernel was originally developed by Richard Barry around 2003, and was later developed and maintained by Barry's company, Real Time Engineers Ltd. In 2017, Real Time Engineers Ltd passed stewardship of the FreeRTOS project to Amazon Web Services. Barry continues to work on FreeRTOS as part of an AWS team.
@@ -101,6 +113,29 @@ __.__  Scheduler can be configured for both preemptive or cooperative operation.
 __.__  Coroutine support (coroutines in FreeRTOS are simple and lightweight tasks with limited use of the call stack)
 
 __.__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-      based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
