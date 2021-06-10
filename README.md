@@ -182,15 +182,14 @@ __•__  Texas Instruments CC3220SF-LAUNCHXL
 
 __•__  Microsoft Windows 7 or later, with at least a dual core and a hard-wired Ethernet connection
 
-__•__  Xilinx Avnet MicroZed Industrial IoT Kit
+__•__  [GitHub] (Xilinx Avnet MicroZed Industrial IoT Kit)
 
 
-Qualified devices are also listed on the AWS Partner Device Catalog.
+Qualified devices are also listed on the __ AWS Partner Device Catalog __ .
 
-For information about qualifying a new device, see the FreeRTOS Qualification Guide.
+For information about qualifying a new device, see the __ FreeRTOS Qualification Guide __.
 
 
-[GitHub] (https://devices.amazonaws.com/detail/a3G0L00000AANvOUAX/ATECC608a-Zero-Touch-Provisioning-Kit-for-AWS-IoT)
 
 
 
