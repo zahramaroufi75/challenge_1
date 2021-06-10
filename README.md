@@ -144,8 +144,50 @@ FreeRTOS is typically flashed to devices as a single compiled image with all of 
 
 ![Image of Yaktocat](https://docs.aws.amazon.com/freertos/latest/userguide/images/afreertos-architecture.png)
 
+## FreeRTOS-qualified hardware platforms
+
+__•__ ATECC608A Zero Touch Provisioning Kit for AWS IoT
+
+__•__ Cypress CYW943907AEVAL1F Development Kit
+
+__•__ Cypress CYW954907AEVAL1F Development Kit
+
+__•__ Espressif ESP32-DevKitC
+
+__•__ Espressif ESP-WROVER-KIT
+
+__•__ Infineon XMC4800 IoT Connectivity Kit
+
+__•__ Marvell MW320 AWS IoT Starter Kit
+
+__•__ Marvell MW322 AWS IoT Starter Kit
+
+__•__ MediaTek MT7697Hx Development Kit
+
+__•__ Microchip Curiosity PIC32MZEF Bundle
+
+__•__ Nordic nRF52840-DK
+
+__•__ NuMaker-IoT-M487
+
+__•__ NXP LPC54018 IoT Module
+
+__•__ OPTIGA Trust X Security Solution
+
+__•__ Renesas RX65N RSK IoT Module
+
+__•__ STMicroelectronicsSTM32L4 Discovery Kit IoT Node
+
+__•__ Texas Instruments CC3220SF-LAUNCHXL
+
+__•__ Microsoft Windows 7 or later, with at least a dual core and a hard-wired Ethernet connection
+
+__•__ Xilinx Avnet MicroZed Industrial IoT Kit
 
 
+Qualified devices are also listed on the AWS Partner Device Catalog.
+
+For information about qualifying a new device, see the FreeRTOS Qualification Guide.
 
 
 
