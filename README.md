@@ -200,16 +200,13 @@ You start development by downloading FreeRTOS. You unzip the package and import 
 
 ## FreeRTOS kernel fundamentals
 
-The FreeRTOS kernel is a real-time operating system that supports numerous architectures. It is ideal for
-building embedded microcontroller applications. It provides:
+The FreeRTOS kernel is a real-time operating system that supports numerous architectures. It is ideal for building embedded microcontroller applications. It provides:
 
 __•__  A multitasking scheduler.
 
-__•__  Multiple memory allocation options (including the ability to create completely statically-allocated
-systems).
+__•__  Multiple memory allocation options (including the ability to create completely statically-allocated systems).
 
-__•__  Intertask coordination primitives, including task notifications, message queues, multiple types of
-semaphore, and stream and message buffers.
+__•__  Intertask coordination primitives, including task notifications, message queues, multiple types of semaphore, and stream and message buffers.
 
 
 The FreeRTOS kernel never performs non-deterministic operations, such as walking a linked list, inside a critical section or interrupt. The FreeRTOS kernel includes an efficient software timer implementation that does not use any CPU time unless a timer needs servicing. Blocked tasks do not require timeconsuming periodic servicing. Direct-to task notifications allow fast task signaling, with practically no RAM overhead. They can be used in most intertask and interrupt-to-task signaling scenarios.
@@ -219,14 +216,60 @@ The FreeRTOS kernel is designed to be small, simple, and easy to use. A typical 
 For the most up-to-date documentation about the FreeRTOS kernel, see __FreeRTOS.org.__ . FreeRTOS.org offers a number of detailed tutorials and guides about using the FreeRTOS kernel, including a __Quick Start Guide__ and the more in-depth __Mastering the FreeRTOS Real Time Kernel__.
 
 
-## FreeRTOS kernel scheduler
+### FreeRTOS kernel scheduler
 
 An embedded application that uses an RTOS can be structured as a set of independent tasks. Each task executes within its own context, with no dependency on other tasks. Only one task in the application is running at any point in time. The real-time RTOS scheduler determines when each task should run. Each task is provided with its own stack. When a task is swapped out so another task can run, the task’s execution context is saved to the task stack so it can be restored when the same task is later swapped
 back in to resume its execution.
 
 To provide deterministic real-time behavior, the FreeRTOS tasks scheduler allows tasks to be assigned strict priorities. RTOS ensures the highest priority task that is able to execute is given processing time. This requires sharing processing time between tasks of equal priority if they are ready to run simultaneously. FreeRTOS also creates an idle task that executes only when no other tasks are ready to run.
 
+### Memory management
 
+This section provides information about kernel memory allocation and application memory management.
+
+
+#### Kernel memory allocation
+
+The RTOS kernel needs RAM each time a task, queue, or other RTOS object is created. The RAM can be allocated:
+
+__•__ Statically at compile time.
+
+__•__ Dynamically from the RTOS heap by the RTOS API object creation functions.
+
+
+When RTOS objects are created dynamically, using the standard C library malloc() and free() functions is not always appropriate for a number of reasons:
+
+__•__ They might not be available on embedded systems.
+
+__•__ They take up valuable code space.
+
+__•__ They are not typically thread-safe.
+
+__•__ They are not deterministic.
+
+For these reasons, FreeRTOS keeps the memory allocation API in its portable layer. The portable layer is outside of the source files that implement the core RTOS functionality, so you can provide an application-specific implementation appropriate for the real-time system you're developing. When the RTOS kernel requires RAM, it calls pvPortMalloc() instead of malloc()(). When RAM is being freed,the RTOS kernel calls vPortFree() instead of free().
+
+
+#### Application memory management
+
+When applications need memory, they can allocate it from the FreeRTOS heap. FreeRTOS offers several heap management schemes that range in complexity and features. You can also provide your own heap implementation.
+
+The FreeRTOS kernel includes five heap implementations:
+
+heap_1
+Is the simplest implementation. Does not permit memory to be freed.
+
+heap_2
+Permits memory to be freed, but not does coalesce adjacent free blocks.
+
+heap_3
+Wraps the standard malloc() and free() for thread safety.
+
+heap_4
+Coalesces adjacent free blocks to avoid fragmentation. Includes an absolute address placement option.
+
+heap_5
+Is similar to heap_4. Can span the heap across multiple, non-adjacent memory areas.
 
 
 
