@@ -88,15 +88,15 @@ FreeRTOS is designed to be small and simple. The kernel itself consists of only 
 
 FreeRTOS provides methods for multiple __threads__ or __tasks__ , __mutexes__ , __semaphores__ and __software timers__ . A tick-less mode is provided for low power applications. Thread priorities are supported. FreeRTOS applications can be completely statically allocated. Alternatively RTOS objects can be dynamically allocated with five schemes of memory allocation provided:
 
-__.__   allocate only
+__•__   allocate only
 
-__.__   allocate and free with a very simple, fast, algorithm
+__•__   allocate and free with a very simple, fast, algorithm
 
-__.__   a more complex but fast allocate and free algorithm with memory coalescence
+__•__   a more complex but fast allocate and free algorithm with memory coalescence
 
-__.__   an alternative to the more complex scheme that includes memory coalescence that allows a heap to be broken across multiple memory areas
+__•__   an alternative to the more complex scheme that includes memory coalescence that allows a heap to be broken across multiple memory areas
 
-__.__   and C library allocate and free with some mutual exclusion protection
+__•__   and C library allocate and free with some mutual exclusion protection
 
 There are none of the more advanced features typically found in operating systems like Linux or Microsoft Windows, such as device drivers, advanced memory management, user accounts, and networking. The emphasis is on compactness and speed of execution. FreeRTOS can be thought of as a 'thread library' rather than an 'operating system', although command line interface and POSIX-like I/O abstraction add-ons are available.
 
@@ -106,19 +106,19 @@ FreeRTOS implements multiple threads by having the host program call a thread ti
 
 ## Key features
 
-__.__  Book and reference manuals.
+__•__  Book and reference manuals.
 
-__.__  Small memory footprint, low overhead, and fast execution.
+__•__  Small memory footprint, low overhead, and fast execution.
 
-__.__  Tick-less option for low power applications.
+__•__  Tick-less option for low power applications.
 
-__.__  Intended for both hobbyists and professional developers working on commercial products.
+__•__  Intended for both hobbyists and professional developers working on commercial products.
 
-__.__  Scheduler can be configured for both preemptive or cooperative operation.
+__•__  Scheduler can be configured for both preemptive or cooperative operation.
 
-__.__  Coroutine support (coroutines in FreeRTOS are simple and lightweight tasks with limited use of the call stack)
+__•__  Coroutine support (coroutines in FreeRTOS are simple and lightweight tasks with limited use of the call stack)
 
-__.__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-      based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
+__•__  Trace support through generic trace macros. Tools such as Tracealyzer by FreeRTOS partner Percepio can thereby record and visualize the runtime behavior of FreeRTOS-      based systems for debugging and verification. This includes task scheduling and kernel calls for semaphore and queue operations. Tracealyzer is a commercial tool.
 
 
 ## FreeRTOS versioning
@@ -134,19 +134,15 @@ __•__  N represents the release order within the designated month (00 being th
 For example, a second release in June 2021 would be 202106.01.
 Previously, FreeRTOS releases used semantic versioning for major releases. Although it has moved to date-based versioning (FreeRTOS 1.4.8 updated to FreeRTOS AWS Reference Integrations 201906.00), the FreeRTOS kernel and each individual FreeRTOS library still retain semantic versioning. In semantic versioning, the version number itself (X.Y.Z) indicates whether the release is a major, minor, or point release. You can use the semantic version of a library to assess the scope and impact of a new release on your application.
 
+
 LTS releases are maintained differently than other release types. Major and minor releases are frequently updated with new features in addition to defect resolutions. LTS releases are only updated with changes to address critical defects and security vulnerabilities. No new features are introduced in a given LTS release after launch. They are maintained for at least three calendar years after release, and provide device manufacturers the option to use a stable baseline as opposed to a more dynamic baseline represented by major and minor releases.
 
 
+## FreeRTOS architecture
 
+FreeRTOS is typically flashed to devices as a single compiled image with all of the components required for device applications. This image combines functionality for the applications written by the embedded developer, the software libraries provided by Amazon, the FreeRTOS kernel, and drivers and board support packages (BSPs) for the hardware platform. Independent of the individual microcontroller being used, embedded application developers can expect the same standardized interfaces to the FreeRTOS kernel and all FreeRTOS software libraries.
 
-
-
-
-
-
-
-
-
+![Image of Yaktocat](https://docs.aws.amazon.com/freertos/latest/userguide/images/afreertos-architecture.png)
 
 
 
