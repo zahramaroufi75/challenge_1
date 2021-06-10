@@ -190,7 +190,7 @@ Qualified devices are also listed on the AWS Partner Device Catalog.
 For information about qualifying a new device, see the FreeRTOS Qualification Guide.
 
 
-[GitHub](ATECC608A Zero Touch Provisioning Kit for AWS IoT)
+[GitHub](https://devices.amazonaws.com/detail/a3G0L00000AANvOUAX/ATECC608a-Zero-Touch-Provisioning-Kit-for-AWS-IoT)
 
 
 
