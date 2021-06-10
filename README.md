@@ -197,7 +197,60 @@ You start development by downloading FreeRTOS. You unzip the package and import 
 ![Image of Yaktocat](https://docs.aws.amazon.com/freertos/latest/userguide/images/afr-getting-started-workflow.png)
 
 
-Additional FreeRTOS Documentation is available on freertos.org including the FreeRTOS v10.0.0 Reference Manual.
+
+## FreeRTOS kernel fundamentals
+The FreeRTOS kernel is a real-time operating system that supports numerous architectures. It is ideal for
+building embedded microcontroller applications. It provides:
+
+__•__  A multitasking scheduler.
+
+__•__  Multiple memory allocation options (including the ability to create completely statically-allocated
+systems).
+
+__•__  Intertask coordination primitives, including task notifications, message queues, multiple types of
+semaphore, and stream and message buffers.
+
+
+The FreeRTOS kernel never performs non-deterministic operations, such as walking a linked list, inside a critical section or interrupt. The FreeRTOS kernel includes an efficient software timer implementation that does not use any CPU time unless a timer needs servicing. Blocked tasks do not require timeconsuming periodic servicing. Direct-to task notifications allow fast task signaling, with practically no RAM overhead. They can be used in most intertask and interrupt-to-task signaling scenarios.
+
+The FreeRTOS kernel is designed to be small, simple, and easy to use. A typical RTOS kernel binary image is in the range of 4000 to 9000 bytes.
+
+For the most up-to-date documentation about the FreeRTOS kernel, see __FreeRTOS.org.__ . FreeRTOS.org offers a number of detailed tutorials and guides about using the FreeRTOS kernel, including a __Quick Start Guide__ and the more in-depth __Mastering the FreeRTOS Real Time Kernel__.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
