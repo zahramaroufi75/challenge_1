@@ -146,7 +146,7 @@ FreeRTOS is typically flashed to devices as a single compiled image with all of 
 
 ## FreeRTOS-qualified hardware platforms
 
-__•__ ATECC608A Zero Touch Provisioning Kit for AWS IoT
+__•__ https://devices.amazonaws.com/detail/a3G0L00000AANvOUAX/ATECC608a-Zero-Touch-Provisioning-Kit-for-AWS-IoT
 
 __•__ Cypress CYW943907AEVAL1F Development Kit
 
