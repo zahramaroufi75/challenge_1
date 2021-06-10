@@ -144,6 +144,7 @@ FreeRTOS is typically flashed to devices as a single compiled image with all of 
 
 ![Image of Yaktocat](https://docs.aws.amazon.com/freertos/latest/userguide/images/afreertos-architecture.png)
 
+
 ## FreeRTOS-qualified hardware platforms
 
 __•__  ATECC608A Zero Touch Provisioning Kit for AWS IoT
@@ -223,12 +224,14 @@ back in to resume its execution.
 
 To provide deterministic real-time behavior, the FreeRTOS tasks scheduler allows tasks to be assigned strict priorities. RTOS ensures the highest priority task that is able to execute is given processing time. This requires sharing processing time between tasks of equal priority if they are ready to run simultaneously. FreeRTOS also creates an idle task that executes only when no other tasks are ready to run.
 
+
+
 ### Memory management
 
 This section provides information about kernel memory allocation and application memory management.
 
 
-#### Kernel memory allocation
+#### __Kernel memory allocation__
 
 The RTOS kernel needs RAM each time a task, queue, or other RTOS object is created. The RAM can be allocated:
 
@@ -250,7 +253,7 @@ __•__ They are not deterministic.
 For these reasons, FreeRTOS keeps the memory allocation API in its portable layer. The portable layer is outside of the source files that implement the core RTOS functionality, so you can provide an application-specific implementation appropriate for the real-time system you're developing. When the RTOS kernel requires RAM, it calls pvPortMalloc() instead of malloc()(). When RAM is being freed,the RTOS kernel calls vPortFree() instead of free().
 
 
-#### Application memory management
+#### __Application memory management__
 
 When applications need memory, they can allocate it from the FreeRTOS heap. FreeRTOS offers several heap management schemes that range in complexity and features. You can also provide your own heap implementation.
 
@@ -274,53 +277,41 @@ Is similar to heap_4. Can span the heap across multiple, non-adjacent memory are
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Derivations
+## Derivations of FreeRTOS
 
 
 ### Amazon FreeRTOS
+
 Amazon provides an extension of FreeRTOS, referred to as a:FreeRTOS. This is FreeRTOS with libraries for IOT support, specifically for Amazon Web Services. Since version 10.0.0 in 2017, Amazon has taken stewardship of the FreeRTOS code, including any updates to the original kernel
 
+
 ### SAFERTOS
+
 SAFERTOS was developed as a complementary version of FreeRTOS, with common functionality but designed specifically for safety-critical implementation. FreeRTOS was subjected to HAZOP, and weaknesses were identified and resolved. The result was put through a full IEC 61508 SIL 3 development life cycle, the highest level for a software-only component.
 
 SAFERTOS was developed by WITTENSTEIN High Integrity Systems, in partnership with Real Time Engineers Ltd, primary developer of the FreeRTOS project. Both SAFERTOS and FreeRTOS share the same scheduling algorithm, have similar APIs, and are otherwise very similar, but they were developed with differing objectives. SAFERTOS was developed solely in the C language to meet requirements for certification to IEC61508.
 
 SAFERTOS can reside solely in the on-chip read only memory of a microcontroller for standards compliance. When implemented in hardware memory, SAFERTOS code can only be utilized in its original, already-certified, configuration. This means certification of systems do not need to re-test the kernel portion of their designs. SAFERTOS is included in the ROM of some Stellaris Microcontrollers from Texas Instruments. SAFERTOS source code does not need to be separately purchased. In this usage scenario, a C header file is used to map SAFERTOS API functions to their location in read-only memory.
 
+
 ### OPENRTOS
+
 OPENRTOS is a commercially-licensed version of Amazon FreeRTOS, sold by WITTENSTEIN High Integrity Systems. This product provides support and allows companies to use the Amazon FreeRTOS kernel and libraries without the a:FreeRTOS MIT license.
 
 
 
+## Additional resources
+
+These resources might be helpful to you.
+
+__•__ Additional __FreeRTOS Documentation__ is available on __freertos.org__ including the __FreeRTOS v10.0.0 Reference Manual__.
+
+__•__ For questions about FreeRTOS for the FreeRTOS engineering team, you can open an issue __on the FreeRTOS GitHub page__.
+
+__•__ For technical questions about FreeRTOS visit the __FreeRTOS Community Forums__.
+
+__•__ For more information about connecting devices to AWS IoT, see the __AWS IoT Core Developer Guide__ and the chapter on __Device Provisioning__ in that guide.
+
+__•__ For technical support for AWS, visit the __AWS Support Center__.
+
+__•__ For questions about AWS billing, account services, events, abuse, or other issues with AWS, visit the __Contact Us__ page.
