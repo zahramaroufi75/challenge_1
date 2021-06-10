@@ -65,19 +65,17 @@ Developed in partnership with the world's leading chip companies over a 15-year 
 
 FreeRTOS includes libraries for connectivity, security, and over-the-air (OTA) updates. FreeRTOS also includes demo applications that show FreeRTOS features on qualified boards.
 
-FreeRTOS is an open-source project. You can download the source code, contribute changes or enhancements, or report issues on the GitHub site at [ GitHub ](https://github.com/aws/amazon-freertos).We release FreeRTOS code under the MIT open source license, so you can use it in commercial and personal projects.
+FreeRTOS is an open-source project. You can download the source code, contribute changes or enhancements, or report issues on the GitHub site at https://github.com/aws/amazon-freertos .We release FreeRTOS code under the MIT open source license, so you can use it in commercial and personal projects.
 
 We also welcome contributions to the FreeRTOS documentation (FreeRTOS User Guide, FreeRTOS Porting Guide, and FreeRTOS Qualification Guide). The markdown source for the documentation is available at [ GitHub ](https://github.com/awsdocs/aws-freertos-docs) . It is released under the Creative Commons (CC BY-ND) license.
 
 
 
 
-
-
-
-
 ## History
 The FreeRTOS kernel was originally developed by Richard Barry around 2003, and was later developed and maintained by Barry's company, Real Time Engineers Ltd. In 2017, Real Time Engineers Ltd passed stewardship of the FreeRTOS project to Amazon Web Services. Barry continues to work on FreeRTOS as part of an AWS team.
+
+
 
 ## Implementation
 FreeRTOS is designed to be small and simple. The kernel itself consists of only three C files. To make the code readable, easy to port, and maintainable, it is written mostly in C, but there are a few assembly functions included where needed (mostly in architecture-specific scheduler routines).
@@ -97,6 +95,8 @@ __.__   and C library allocate and free with some mutual exclusion protection
 There are none of the more advanced features typically found in operating systems like Linux or Microsoft Windows, such as device drivers, advanced memory management, user accounts, and networking. The emphasis is on compactness and speed of execution. FreeRTOS can be thought of as a 'thread library' rather than an 'operating system', although command line interface and POSIX-like I/O abstraction add-ons are available.
 
 FreeRTOS implements multiple threads by having the host program call a thread tick method at regular short intervals. The thread tick method switches tasks depending on priority and a __round-robin scheduling__ scheme. The usual interval is 1 to 10 milliseconds (1/1000 to 1/100 of a second), via an interrupt from a hardware timer, but this interval is often changed to suit a particular application.
+
+
 
 ## Key features
 
