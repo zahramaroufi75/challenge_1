@@ -214,7 +214,7 @@ The FreeRTOS kernel never performs non-deterministic operations, such as walking
 
 The FreeRTOS kernel is designed to be small, simple, and easy to use. A typical RTOS kernel binary image is in the range of 4000 to 9000 bytes.
 
-For the most up-to-date documentation about the FreeRTOS kernel, see __FreeRTOS.org.__ . FreeRTOS.org offers a number of detailed tutorials and guides about using the FreeRTOS kernel, including a __Quick Start Guide__ and the more in-depth __Mastering the FreeRTOS Real Time Kernel__.
+For the most up-to-date documentation about the FreeRTOS kernel, see [FreeRTOS.org](https://freertos.org/RTOS.html) . FreeRTOS.org offers a number of detailed tutorials and guides about using the FreeRTOS kernel, including a [Quick Start Guide](https://freertos.org/FreeRTOS-quick-start-guide.html#page_top) and the more in-depth [Mastering the FreeRTOS Real Time Kernel](https://freertos.org/Documentation/161204_Mastering_the_FreeRTOS_Real_Time_Kernel-A_Hands-On_Tutorial_Guide.pdf).
 
 
 ### FreeRTOS kernel scheduler
@@ -260,18 +260,27 @@ When applications need memory, they can allocate it from the FreeRTOS heap. Free
 The FreeRTOS kernel includes five heap implementations:
 
 heap_1
+
 Is the simplest implementation. Does not permit memory to be freed.
 
+
 heap_2
+
 Permits memory to be freed, but not does coalesce adjacent free blocks.
 
+
 heap_3
+
 Wraps the standard malloc() and free() for thread safety.
 
+
 heap_4
+
 Coalesces adjacent free blocks to avoid fragmentation. Includes an absolute address placement option.
 
+
 heap_5
+
 Is similar to heap_4. Can span the heap across multiple, non-adjacent memory areas.
 
 
