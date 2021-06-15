@@ -149,11 +149,11 @@ FreeRTOS is typically flashed to devices as a single compiled image with all of 
 
 __•__  [ATECC608A Zero Touch Provisioning Kit for AWS IoT](https://devices.amazonaws.com/detail/a3G0L00000AANvOUAX/ATECC608a-Zero-Touch-Provisioning-Kit-for-AWS-IoT)
 
-__•__  [Cypress CYW943907AEVAL1F Development Kit]()
+__•__  [Cypress CYW943907AEVAL1F Development Kit](https://devices.amazonaws.com/detail/a3G0L00000AAPg0UAH/CYW943907AEVAL1F)
 
-__•__  [Cypress CYW954907AEVAL1F Development Kit]()
+__•__  [Cypress CYW954907AEVAL1F Development Kit](https://devices.amazonaws.com/detail/a3G0L00000AAPg5UAH/CYW954907AEVAL1F)
 
-__•__  [Espressif ESP32-DevKitC]()
+__•__  [Espressif ESP32-DevKitC](https://devices.amazonaws.com/detail/a3G0L00000AANtjUAH/ESP32-WROOM-32-DevKitC)
 
 __•__  [Espressif ESP-WROVER-KIT]()
  
