@@ -304,14 +304,14 @@ OPENRTOS is a commercially-licensed version of Amazon FreeRTOS, sold by WITTENST
 
 These resources might be helpful to you.
 
-__•__ Additional __[FreeRTOS Documentation](https://www.freertos.org/Documentation/code/index.html) __ is available on [freertos.org](https://freertos.org/) including the  __FreeRTOS v10.0.0 Reference Manual__.
+__•__ Additional [FreeRTOS Documentation](https://www.freertos.org/Documentation/code/index.html) is available on [freertos.org](https://freertos.org/) including the [FreeRTOS v10.0.0 Reference Manual](https://www.freertos.org/fr-content-src/uploads/2018/07/FreeRTOS_Reference_Manual_V10.0.0.pdf).
 
-__•__ For questions about FreeRTOS for the FreeRTOS engineering team, you can open an issue __on the FreeRTOS GitHub page__.
+__•__ For questions about FreeRTOS for the FreeRTOS engineering team, you can open an issue [on the FreeRTOS GitHub page](https://github.com/freertos).
 
-__•__ For technical questions about FreeRTOS visit the __FreeRTOS Community Forums__.
+__•__ For technical questions about FreeRTOS visit the [FreeRTOS Community Forums](https://forums.freertos.org/guidelines).
 
-__•__ For more information about connecting devices to AWS IoT, see the __AWS IoT Core Developer Guide__ and the chapter on __Device Provisioning__ in that guide.
+__•__ For more information about connecting devices to AWS IoT, see the [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/iot-dg.pdf) and the chapter on [Device Provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/iot-provision.html) in that guide.
 
-__•__ For technical support for AWS, visit the __AWS Support Center__.
+__•__ For technical support for AWS, visit the [AWS Support Center](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html).
 
-__•__ For questions about AWS billing, account services, events, abuse, or other issues with AWS, visit the __Contact Us__ page.
+__•__ For questions about AWS billing, account services, events, abuse, or other issues with AWS, visit the [Contact Us](https://www.searchenginejournal.com/examples-contact-us-pages/378518/) page.
