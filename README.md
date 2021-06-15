@@ -155,40 +155,40 @@ __•__  [Cypress CYW954907AEVAL1F Development Kit](https://devices.amazonaws.co
 
 __•__  [Espressif ESP32-DevKitC](https://devices.amazonaws.com/detail/a3G0L00000AANtjUAH/ESP32-WROOM-32-DevKitC)
 
-__•__  [Espressif ESP-WROVER-KIT]()
+__•__  [Espressif ESP-WROVER-KIT](https://devices.amazonaws.com/detail/a3G0L00000AANtlUAH/ESP-WROVER-KIT)
  
-__•__  [Infineon XMC4800 IoT Connectivity Kit]()
+__•__  [Infineon XMC4800 IoT Connectivity Kit](https://devices.amazonaws.com/detail/a3G0L00000AANsbUAH/XMC4800-IoT-FreeRTOS-Connectivity-Kit-WiFi)
 
-__•__  [Marvell MW320 AWS IoT Starter Kit]()
+__•__  [Marvell MW320 AWS IoT Starter Kit](https://devices.amazonaws.com/detail/a3G0h000000OaRnEAK/MW320-AWS-IoT-Starter-Kit)
 
-__•__  [Marvell MW322 AWS IoT Starter Kit]()
+__•__  [Marvell MW322 AWS IoT Starter Kit](https://devices.amazonaws.com/detail/a3G0h000000OblKEAS/MW322-AWS-IoT-Starter-Kit)
 
-__•__  [MediaTek MT7697Hx Development Kit]()
+__•__  [MediaTek MT7697Hx Development Kit](https://devices.amazonaws.com/detail/a3G0L00000AAOmPUAX/MT7697Hx-Development-Kit)
 
-__•__  [Microchip Curiosity PIC32MZEF Bundle]()
+__•__  [Microchip Curiosity PIC32MZEF Bundle](https://devices.amazonaws.com/detail/a3G0L00000AANscUAH/Curiosity-PIC32MZ-EF-FreeRTOS-Bundle)
 
-__•__  [Nordic nRF52840-DK]()
+__•__  [Nordic nRF52840-DK](https://devices.amazonaws.com/detail/a3G0L00000AANtrUAH/nRF52840-Development-Kit)
 
-__•__  [NuMaker-IoT-M487]()
+__•__  [NuMaker-IoT-M487](https://devices.amazonaws.com/detail/a3G0h000000Tg9cEAC/NuMaker-IoT-M487)
 
-__•__  [NXP LPC54018 IoT Module]()
+__•__  [NXP LPC54018 IoT Module](https://devices.amazonaws.com/detail/a3G0L00000AAOkeUAH/Renesas-Starter-Kit-for-RX65N-2MB)
 
-__•__  [OPTIGA Trust X Security Solution]()
+__•__  [OPTIGA Trust X Security Solution](https://devices.amazonaws.com/detail/a3G0h000007712QEAQ/OPTIGA-Trust-X-Security-Solution)
 
-__•__  [Renesas RX65N RSK IoT Module]()
+__•__  [Renesas RX65N RSK IoT Module](https://devices.amazonaws.com/detail/a3G0L00000AAOkeUAH/Renesas-Starter-Kit-for-RX65N-2MB)
 
-__•__  [STMicroelectronicsSTM32L4 Discovery Kit IoT Node]()
+__•__  [STMicroelectronicsSTM32L4 Discovery Kit IoT Node](https://devices.amazonaws.com/detail/a3G0L00000AANsWUAX/STM32L4-Discovery-Kit-IoT-Node)
 
-__•__  [Texas Instruments CC3220SF-LAUNCHXL]()
+__•__  [Texas Instruments CC3220SF-LAUNCHXL](https://devices.amazonaws.com/detail/a3G0L00000AANtaUAH/SimpleLink-Wi-Fi-CC3220SF-Wireless-Microcontroller-LaunchPad-Development-Kit)
 
-__•__  [Microsoft Windows 7 or later, with at least a dual core and a hard-wired Ethernet connection]()
+__•__  Microsoft Windows 7 or later, with at least a dual core and a hard-wired Ethernet connection
 
-__•__  [Xilinx Avnet MicroZed Industrial IoT Kit]()
+__•__  [Xilinx Avnet MicroZed Industrial IoT Kit](https://devices.amazonaws.com/detail/a3G0L00000AANtqUAH/MicroZed-IIoT-Bundle-with-FreeRTOS)
 
 
-Qualified devices are also listed on the __ AWS Partner Device Catalog __ .
+Qualified devices are also listed on the [AWS Partner Device Catalog](https://devices.amazonaws.com/search?page=1&sv=freertos).
 
-For information about qualifying a new device, see the __ FreeRTOS Qualification Guide __.
+For information about qualifying a new device, see the [FreeRTOS Qualification Guide](https://docs.aws.amazon.com/freertos/latest/qualificationguide/afr-qualification.html).
 
 
 ## Development workflow
@@ -304,14 +304,14 @@ OPENRTOS is a commercially-licensed version of Amazon FreeRTOS, sold by WITTENST
 
 These resources might be helpful to you.
 
-__•__ Additional [FreeRTOS Documentation](https://www.freertos.org/Documentation/code/index.html) is available on [freertos.org](https://freertos.org/) including the [FreeRTOS v10.0.0 Reference Manual](https://www.freertos.org/fr-content-src/uploads/2018/07/FreeRTOS_Reference_Manual_V10.0.0.pdf).
+__•__ Additional [FreeRTOS Documentation](https://www.freertos.org/Documentation/RTOS_book.html) is available on [freertos.org](https://www.freertos.org/) including the [FreeRTOS v10.0.0 Reference Manual](https://www.freertos.org/fr-content-src/uploads/2018/07/FreeRTOS_Reference_Manual_V10.0.0.pdf).
 
-__•__ For questions about FreeRTOS for the FreeRTOS engineering team, you can open an issue [on the FreeRTOS GitHub page](https://github.com/freertos).
+__•__ For questions about FreeRTOS for the FreeRTOS engineering team, you can open an issue [on the FreeRTOS GitHub page](https://github.com/aws/amazon-freertos/issues).
 
-__•__ For technical questions about FreeRTOS visit the [FreeRTOS Community Forums](https://forums.freertos.org/guidelines).
+__•__ For technical questions about FreeRTOS visit the [FreeRTOS Community Forums](https://forums.freertos.org/).
 
-__•__ For more information about connecting devices to AWS IoT, see the [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/iot-dg.pdf) and the chapter on [Device Provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/iot-provision.html) in that guide.
+__•__ For more information about connecting devices to AWS IoT, see the [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html) and the chapter on [Device Provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/iot-provision.html) in that guide.
 
-__•__ For technical support for AWS, visit the [AWS Support Center](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html).
+__•__ For technical support for AWS, visit the [AWS Support Center](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fsupport%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fsupportcenter&forceMobileApp=0&code_challenge=YFEvgwNSzkwGYciU8NX7O-DyaORK58WD4OyMjo6_AQc&code_challenge_method=SHA-256).
 
-__•__ For questions about AWS billing, account services, events, abuse, or other issues with AWS, visit the [Contact Us](https://www.searchenginejournal.com/examples-contact-us-pages/378518/) page.
+__•__ For questions about AWS billing, account services, events, abuse, or other issues with AWS, visit the [Contact Us](https://aws.amazon.com/contact-us/) page.
