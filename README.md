@@ -304,7 +304,7 @@ OPENRTOS is a commercially-licensed version of Amazon FreeRTOS, sold by WITTENST
 
 These resources might be helpful to you.
 
-__•__ Additional __FreeRTOS Documentation__ is available on __freertos.org__ including the __FreeRTOS v10.0.0 Reference Manual__.
+__•__ Additional __FreeRTOS Documentation__ is available on [Buck](freertos.org) including the __FreeRTOS v10.0.0 Reference Manual__.
 
 __•__ For questions about FreeRTOS for the FreeRTOS engineering team, you can open an issue __on the FreeRTOS GitHub page__.
 
